@@ -13,6 +13,8 @@
 		B233792826E3F1A00030EC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B233792726E3F1A00030EC1B /* Assets.xcassets */; };
 		B233792B26E3F1A00030EC1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B233792A26E3F1A00030EC1B /* Preview Assets.xcassets */; };
 		B233792E26E3F1A00030EC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B233792C26E3F1A00030EC1B /* LaunchScreen.storyboard */; };
+		B233793626E3F6120030EC1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B233793526E3F6120030EC1B /* Main.storyboard */; };
+		B233793826E3F66C0030EC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B233793726E3F66C0030EC1B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B233792A26E3F1A00030EC1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B233792D26E3F1A00030EC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B233792F26E3F1A00030EC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B233793526E3F6120030EC1B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B233793726E3F66C0030EC1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B233792C26E3F1A00030EC1B /* LaunchScreen.storyboard */,
 				B233792F26E3F1A00030EC1B /* Info.plist */,
 				B233792926E3F1A00030EC1B /* Preview Content */,
+				B233793526E3F6120030EC1B /* Main.storyboard */,
+				B233793726E3F66C0030EC1B /* ViewController.swift */,
 			);
 			path = HelloXcode11;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 				B233792E26E3F1A00030EC1B /* LaunchScreen.storyboard in Resources */,
 				B233792B26E3F1A00030EC1B /* Preview Assets.xcassets in Resources */,
 				B233792826E3F1A00030EC1B /* Assets.xcassets in Resources */,
+				B233793626E3F6120030EC1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +154,7 @@
 			files = (
 				B233792226E3F19E0030EC1B /* AppDelegate.swift in Sources */,
 				B233792426E3F19E0030EC1B /* SceneDelegate.swift in Sources */,
+				B233793826E3F66C0030EC1B /* ViewController.swift in Sources */,
 				B233792626E3F19E0030EC1B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +299,7 @@
 				DEVELOPMENT_TEAM = L66ZCA7RKB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HelloXcode11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +321,7 @@
 				DEVELOPMENT_TEAM = L66ZCA7RKB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HelloXcode11/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
