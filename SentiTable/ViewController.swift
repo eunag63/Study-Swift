@@ -15,10 +15,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //데이터 무엇 반복?
-        //1. 임의의 셀 만들기
-        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
-        cell.textLabel?.text = "\(indexPath.row)"
+        //1. 임의의 셀 만들기 : 연습
+//        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "TableCellType1")
+//        cell.textLabel?.text = "\(indexPath.row)"
+        
+        //2.스토리보드 + id : 실전
+        let cell = TableViewMain.dequeueReusableCell(withIdentifier: "Type1", for: indexPath) as! Type1
+        cell.LabelText.text = "\(indexPath.row)"
+        
         return cell
+    }
+    
+    //3. 클릭시
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Click!! \(indexPath.row)")
+        
     }
     
 
