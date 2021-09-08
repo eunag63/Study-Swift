@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FCF28B98E3068D6B8F973E1 /* Pods_prTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB77C9C72A5A38718A225E6 /* Pods_prTab.framework */; };
 		B2337A0626E89FCE0030EC1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A0526E89FCE0030EC1B /* AppDelegate.swift */; };
 		B2337A0826E89FCE0030EC1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A0726E89FCE0030EC1B /* SceneDelegate.swift */; };
 		B2337A0A26E89FCE0030EC1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A0926E89FCE0030EC1B /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		B2337A1026E89FCF0030EC1B /* prTab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2337A0E26E89FCE0030EC1B /* prTab.xcdatamodeld */; };
 		B2337A1226E89FCF0030EC1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2337A1126E89FCF0030EC1B /* Assets.xcassets */; };
 		B2337A1526E89FCF0030EC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2337A1326E89FCF0030EC1B /* LaunchScreen.storyboard */; };
+		B2337A1D26E8A2590030EC1B /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A1C26E8A2590030EC1B /* ViewController2.swift */; };
+		B2337A1F26E8A2670030EC1B /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A1E26E8A2670030EC1B /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EB77C9C72A5A38718A225E6 /* Pods_prTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA499D9413C9C24F174210C /* Pods-prTab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prTab.debug.xcconfig"; path = "Target Support Files/Pods-prTab/Pods-prTab.debug.xcconfig"; sourceTree = "<group>"; };
 		B2337A0226E89FCE0030EC1B /* prTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2337A0526E89FCE0030EC1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2337A0726E89FCE0030EC1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		B2337A1126E89FCF0030EC1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2337A1426E89FCF0030EC1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2337A1626E89FCF0030EC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2337A1C26E8A2590030EC1B /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		B2337A1E26E8A2670030EC1B /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		E4AF5FDE620259108DDA3453 /* Pods-prTab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prTab.release.xcconfig"; path = "Target Support Files/Pods-prTab/Pods-prTab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FCF28B98E3068D6B8F973E1 /* Pods_prTab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77E00240E917D748613CD4E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA499D9413C9C24F174210C /* Pods-prTab.debug.xcconfig */,
+				E4AF5FDE620259108DDA3453 /* Pods-prTab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9623FEA6E93883E77F92DE67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB77C9C72A5A38718A225E6 /* Pods_prTab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B23379F926E89FCE0030EC1B = {
 			isa = PBXGroup;
 			children = (
 				B2337A0426E89FCE0030EC1B /* prTab */,
 				B2337A0326E89FCE0030EC1B /* Products */,
+				77E00240E917D748613CD4E4 /* Pods */,
+				9623FEA6E93883E77F92DE67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +94,8 @@
 				B2337A1326E89FCF0030EC1B /* LaunchScreen.storyboard */,
 				B2337A1626E89FCF0030EC1B /* Info.plist */,
 				B2337A0E26E89FCE0030EC1B /* prTab.xcdatamodeld */,
+				B2337A1C26E8A2590030EC1B /* ViewController2.swift */,
+				B2337A1E26E8A2670030EC1B /* ViewController3.swift */,
 			);
 			path = prTab;
 			sourceTree = "<group>";
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2337A1926E89FCF0030EC1B /* Build configuration list for PBXNativeTarget "prTab" */;
 			buildPhases = (
+				D890A3CA1893F8EE74C49043 /* [CP] Check Pods Manifest.lock */,
 				B23379FE26E89FCE0030EC1B /* Sources */,
 				B23379FF26E89FCE0030EC1B /* Frameworks */,
 				B2337A0026E89FCE0030EC1B /* Resources */,
+				5B339F821BCFF758B212E2D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,12 +167,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B339F821BCFF758B212E2D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prTab/Pods-prTab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-prTab/Pods-prTab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-prTab/Pods-prTab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D890A3CA1893F8EE74C49043 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-prTab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B23379FE26E89FCE0030EC1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2337A1D26E8A2590030EC1B /* ViewController2.swift in Sources */,
 				B2337A0A26E89FCE0030EC1B /* ViewController.swift in Sources */,
+				B2337A1F26E8A2670030EC1B /* ViewController3.swift in Sources */,
 				B2337A0626E89FCE0030EC1B /* AppDelegate.swift in Sources */,
 				B2337A0826E89FCE0030EC1B /* SceneDelegate.swift in Sources */,
 				B2337A1026E89FCF0030EC1B /* prTab.xcdatamodeld in Sources */,
@@ -287,6 +363,7 @@
 		};
 		B2337A1A26E89FCF0030EC1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA499D9413C9C24F174210C /* Pods-prTab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +383,7 @@
 		};
 		B2337A1B26E89FCF0030EC1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AF5FDE620259108DDA3453 /* Pods-prTab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
