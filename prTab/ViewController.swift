@@ -14,10 +14,10 @@ class ViewController: TabmanViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let vc2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController2") as! ViewController2
         let vc3 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController3") as! ViewController3
-            
+        
         viewControllers.append(vc2)
         viewControllers.append(vc3)
         
@@ -26,7 +26,11 @@ class ViewController: TabmanViewController {
         // Create bar
         let bar = TMBar.ButtonBar()
         bar.layout.transitionStyle = .snap // Customize
-
+        bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
+        
+        //오버스크롤
+//        bar.indicator.overscrollBehavior = .compress
+        bar.indicator.overscrollBehavior = .bounce
         // Add to view
         addBar(bar, dataSource: self, at: .top)
     }
@@ -45,9 +49,11 @@ extension ViewController: PageboyViewControllerDataSource, TMBarDataSource {
         
         switch index {
                 case 0:
-                    return TMBarItem(title: "example 1")
+                    return TMBarItem(title: "전체")
                 case 1:
-                    return TMBarItem(title: "example 2")
+                    return TMBarItem(title: "거실")
+                case 2:
+                    return TMBarItem(title: "주방")
                 default:
                     let title = "Page \(index)"
                     return TMBarItem(title: title)
