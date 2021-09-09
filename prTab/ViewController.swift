@@ -17,23 +17,40 @@ class ViewController: TabmanViewController {
         
         let vc2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController2") as! ViewController2
         let vc3 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController3") as! ViewController3
+        let vc4 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController4") as! ViewController4
+        let vc5 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController5") as! ViewController5
+        let vc6 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController6") as! ViewController6
         
         viewControllers.append(vc2)
         viewControllers.append(vc3)
+        viewControllers.append(vc4)
+        viewControllers.append(vc5)
+        viewControllers.append(vc6)
         
         self.dataSource = self
 
         // Create bar
         let bar = TMBar.ButtonBar()
-        bar.layout.transitionStyle = .snap // Customize
-        bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 20.0, bottom: 0.0, right: 20.0)
         
-        //오버스크롤
-//        bar.indicator.overscrollBehavior = .compress
+        
+        bar.layout.transitionStyle = .snap // Customize
+        bar.layout.contentInset = UIEdgeInsets(top: 0.0, left: 50.0, bottom: 0.0, right: 20.0)
+        
+        bar.buttons.customize { (button) in
+            button.tintColor = .black
+            button.selectedTintColor = .orange
+        }
+        
+        bar.indicator.weight = .light
         bar.indicator.overscrollBehavior = .bounce
+        
+        
         // Add to view
         addBar(bar, dataSource: self, at: .top)
     }
+    
+   
+    
 }
 
 //탭에 보여질 글자 관리
@@ -54,6 +71,10 @@ extension ViewController: PageboyViewControllerDataSource, TMBarDataSource {
                     return TMBarItem(title: "거실")
                 case 2:
                     return TMBarItem(title: "주방")
+                case 3:
+                    return TMBarItem(title: "화장실")
+                case 4:
+                    return TMBarItem(title: "문/창문")
                 default:
                     let title = "Page \(index)"
                     return TMBarItem(title: title)

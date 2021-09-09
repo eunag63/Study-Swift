@@ -17,6 +17,9 @@
 		B2337A1526E89FCF0030EC1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2337A1326E89FCF0030EC1B /* LaunchScreen.storyboard */; };
 		B2337A1D26E8A2590030EC1B /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A1C26E8A2590030EC1B /* ViewController2.swift */; };
 		B2337A1F26E8A2670030EC1B /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A1E26E8A2670030EC1B /* ViewController3.swift */; };
+		B2337A2126E8F2CB0030EC1B /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A2026E8F2CB0030EC1B /* ViewController4.swift */; };
+		B2337A2326E8F2F50030EC1B /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A2226E8F2F50030EC1B /* ViewController5.swift */; };
+		B2337A2526E8F3090030EC1B /* ViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2337A2426E8F3090030EC1B /* ViewController6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		B2337A1626E89FCF0030EC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2337A1C26E8A2590030EC1B /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		B2337A1E26E8A2670030EC1B /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		B2337A2026E8F2CB0030EC1B /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		B2337A2226E8F2F50030EC1B /* ViewController5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		B2337A2426E8F3090030EC1B /* ViewController6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController6.swift; sourceTree = "<group>"; };
 		E4AF5FDE620259108DDA3453 /* Pods-prTab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prTab.release.xcconfig"; path = "Target Support Files/Pods-prTab/Pods-prTab.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +102,9 @@
 				B2337A0E26E89FCE0030EC1B /* prTab.xcdatamodeld */,
 				B2337A1C26E8A2590030EC1B /* ViewController2.swift */,
 				B2337A1E26E8A2670030EC1B /* ViewController3.swift */,
+				B2337A2026E8F2CB0030EC1B /* ViewController4.swift */,
+				B2337A2226E8F2F50030EC1B /* ViewController5.swift */,
+				B2337A2426E8F3090030EC1B /* ViewController6.swift */,
 			);
 			path = prTab;
 			sourceTree = "<group>";
@@ -215,9 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2337A1D26E8A2590030EC1B /* ViewController2.swift in Sources */,
+				B2337A2126E8F2CB0030EC1B /* ViewController4.swift in Sources */,
 				B2337A0A26E89FCE0030EC1B /* ViewController.swift in Sources */,
 				B2337A1F26E8A2670030EC1B /* ViewController3.swift in Sources */,
+				B2337A2326E8F2F50030EC1B /* ViewController5.swift in Sources */,
 				B2337A0626E89FCE0030EC1B /* AppDelegate.swift in Sources */,
+				B2337A2526E8F3090030EC1B /* ViewController6.swift in Sources */,
 				B2337A0826E89FCE0030EC1B /* SceneDelegate.swift in Sources */,
 				B2337A1026E89FCF0030EC1B /* prTab.xcdatamodeld in Sources */,
 			);
